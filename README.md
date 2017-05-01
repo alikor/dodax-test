@@ -1,4 +1,15 @@
-# DodaxTest
+# Assignment brief
+
+
+Create an Angular2 web application that displays weather forecast for a city, taken from a web API like Yahoo! Weather (https://developer.yahoo.com/weather/)
+The application should use responsive design techniques to nicely display the weather forecast of the next 3 days.
+The web UI should have a menu bar with three links. Each link will represent a city (eg: Vienna - AT, ...) and will lead to the three days forecast for this city.
+
+Parameters that will be used to judge your application:
+- easiness to run it, including necessary documentation
+- cleanness of the code and respect of best design practices
+
+# Dodax-Test
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 
