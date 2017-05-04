@@ -1,24 +1,34 @@
-# Assignment brief
+# DodaxTest
+
+## Installation
+
+**BEFORE YOU INSTALL:** please read the [prerequisites](#prerequisites)
+```bash
+npm install -g @angular/cli
+```
+
+## Install all project dependencies
+
+Run the following command within the root of this project
+
+```bash
+npm install
+```
+
+## Obtain a openweathermap.com API KEY 
+
+You will need to register for an account before being given a API Key
+
+[Generate API Key](https://home.openweathermap.org/api_keys)
 
 
-Create an Angular2 web application that displays weather forecast for a city, taken from a web API like Yahoo! Weather (https://developer.yahoo.com/weather/)
-The application should use responsive design techniques to nicely display the weather forecast of the next 3 days.
-The web UI should have a menu bar with three links. Each link will represent a city (eg: Vienna - AT, ...) and will lead to the three days forecast for this city.
+## Update APIID in config
 
-Parameters that will be used to judge your application:
-- easiness to run it, including necessary documentation
-- cleanness of the code and respect of best design practices
+[APIConfig.ts](./APIConfig.ts) file can be located within the root of the project please set the api key that was obtained in the previous step
 
-# Dodax-Test
+## Launch development server
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
-
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+Run `ng serve` for a dev server. Navigate to [`http://localhost:4200/`](http://localhost:4200/).
 
 ## Build
 
@@ -27,16 +37,3 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

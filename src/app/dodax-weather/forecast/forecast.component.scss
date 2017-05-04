@@ -1,0 +1,70 @@
+@import "http://fonts.googleapis.com/css?family=Open+Sans:400,300,700";
+@import "http://weloveiconfonts.com/api/?family=entypo";
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* Colors declarations */
+
+$lighterGray:     #E0E1E3;
+$darkGray:        #1F222A;
+$font:            #eee;
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        height: 50px;
+        line-height: 50px;
+        padding: 0.5em;
+        img {
+          vertical-align: middle;
+        }
+    }
+}
+
+
+section {
+    width: 100%;
+    background-color: $darkGray;
+    color: $font;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 0.2em 1em;
+
+    h1 {
+        padding: 0 0 .5em 0;
+        font-size: 1.5em;
+        border-bottom: 2px solid $lighterGray;
+    }
+
+    h2 {
+      margin-left: 1em;
+      display: inline;
+      height: 50px;
+      line-height: 50px;
+      color: #fff;
+    }
+    span {
+      float: right;
+    }
+}
+
+@media (min-width: 30em) {
+  section {
+    width: 25em;
+    margin: 1em auto;
+    border-radius: 7px;
+  }
+}

@@ -1,0 +1,13 @@
+<header>
+
+  <nav>
+  <label for="show-menu" class="show-menu">Show menu</label>
+  <input type="checkbox" id="show-menu" role="button">
+  <ul id="menu">
+    <li *ngFor="let city of cities">
+      <a [routerLink]="['forecast', city.name]" >{{city.name}}</a>
+    </li>
+  </ul>
+  </nav>
+</header>
+<router-outlet></router-outlet>

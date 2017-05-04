@@ -1,0 +1,12 @@
+<section *ngIf="city">
+<h1>{{city.name}}, {{city.country}}</h1>
+<ol>
+    <li *ngFor="let item of weather">
+        <img [src]="item.iconUrl" >
+        <h2>{{item.getDayOfWeek()}}</h2>
+        <span>{{item.maxTemperature}} &#8451; {{item.minTemperature}} &#8451;</span>
+    </li>
+</ol>
+
+<div class="temperature"></div>
+</section>
